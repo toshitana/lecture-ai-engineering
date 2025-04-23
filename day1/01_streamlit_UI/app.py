@@ -20,7 +20,7 @@ st.markdown("### コメントを解除しながらStreamlitの機能を学びま
 st.markdown("このデモコードでは、コメントアウトされた部分を順番に解除しながらUIの変化を確認できます。")
 
 # ============================================
-# サイドバー 
+# サイドバー
 # ============================================
 st.sidebar.header("デモのガイド")
 st.sidebar.info("コードのコメントを解除して、Streamlitのさまざまな機能を確認しましょう。")
@@ -51,12 +51,12 @@ st.write(f"こんにちは、{name}さん！")
 # st.write(f"あなたの年齢: {age}")
 
 # セレクトボックス
-# st.subheader("セレクトボックス")
-# option = st.selectbox(
-#     "好きなプログラミング言語は?",
-#     ["Python", "JavaScript", "Java", "C++", "Go", "Rust"]
-# )
-# st.write(f"あなたは{option}を選びました")
+st.subheader("セレクトボックス")
+option = st.selectbox(
+    "好きなプログラミング言語は?",
+    ["Python", "JavaScript", "Java", "C++", "Go", "Rust"]
+)
+st.write(f"あなたは{option}を選びました")
 
 # ============================================
 # レイアウト
