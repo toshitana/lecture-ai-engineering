@@ -110,6 +110,9 @@ def test_value_ranges(sample_data):
         gx.expectations.ExpectColumnDistinctValuesToBeInSet(
             column="Pclass", value_set=[1, 2, 3]
         ),
+        gx.expectations.ExpectColumnValuesToBeBetween(
+            column="Parch", min_value=0, max_value=10
+        ),
         gx.expectations.ExpectColumnDistinctValuesToBeInSet(
             column="Sex", value_set=["male", "female"]
         ),
